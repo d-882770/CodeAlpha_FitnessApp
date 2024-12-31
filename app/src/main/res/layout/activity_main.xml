@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/typeEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Workout Type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/dateEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date (YYYY-MM-DD)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/typeEditText"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/durationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Duration (minutes)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateEditText"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/caloriesEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Calories Burned"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durationEditText"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/addWorkoutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add Workout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/caloriesEditText"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/viewProgressButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addWorkoutButton"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/goalNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Goal Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewProgressButton"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/goalTargetEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Goal Target"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goalNameEditText"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/setGoalsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Set Goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goalTargetEditText"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/exerciseLibraryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Exercise Library"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setGoalsButton"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/viewStatsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Statistics"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exerciseLibraryButton"
+        android:layout_margin="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
